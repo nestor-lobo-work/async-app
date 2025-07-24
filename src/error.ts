@@ -4,7 +4,6 @@ export class CustomError extends Error {
   extra: unknown;
 
   constructor(statusCode: number, error?: string, extra?: unknown) {
-    // super('CustomError');
     super(`CustomError(${statusCode}): ${error}`);
 
     this.statusCode = statusCode;
